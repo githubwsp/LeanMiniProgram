@@ -1,3 +1,10 @@
 <!--pages/home/home.wxml-->
-<text class="title">Hello world</text>
-<button>button</button>
+<!-- mustache {{}} 数据插入 -->
+<text class="title">Hello world ==>{{name}}</text>
+<!-- wx:for 列表展示-->
+<view wx:for="{{study}}">ID:{{item.id}} , date:{{item.date}}</view>
+<view>点击次数：{{count}}</view>
+<!-- 事件监听 -->
+<button bindtap="onButtonClick" size="mini">button</button>
+
+<button bindtap="onCleanClick" size="mini">clean count</button>

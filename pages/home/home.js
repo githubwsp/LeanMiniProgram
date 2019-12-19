@@ -5,7 +5,27 @@ Page({
    * 页面的初始数据
    */
   data: {
+    name:'吴宋平',
+    study: [{ id: 1, date:'2019年12月20日'},{id:2,date:'2019年12月21日'}],
+    count:0
+  },
 
+  /**
+   * 按键监听事件
+   */
+  onButtonClick() {
+      this.setData({
+        count: this.data.count + 1
+      })
+  },
+
+  /**
+   * 清除点击次数
+   */
+  onCleanClick(){
+    this.setData({
+      count:this.data.count = 0
+    })
   },
 
   /**
