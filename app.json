@@ -1,5 +1,29 @@
 {
   "pages": [
-    "pages/home/home"
-  ]
+    "pages/home/home",
+    "pages/mine/mine"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#FF0000",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "hello world",
+    "navigationStyle":"default"
+  },
+  "tabBar": {
+    "selectedColor": "#FF0000",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "主页",
+        "iconPath": "/assets/tabbar/home.png",
+        "selectedIconPath": "assets/tabbar/home_select.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "个人中心",
+        "iconPath": "assets/tabbar/person.png",
+        "selectedIconPath": "assets/tabbar/person_select.png"
+      }
+    ]
+  }
 }
